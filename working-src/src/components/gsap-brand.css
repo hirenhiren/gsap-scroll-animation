@@ -1,0 +1,170 @@
+.scrollingDiv{
+  background: var(--yellow);
+  height: 100vh;
+}
+
+.innerHeading{
+  font-size: 50px;
+  padding-top:3%;
+  text-align: center;
+}
+
+
+.wrapper {
+  display: inline-flex;
+  width: 100%;
+  background: var(--yellow);
+  overflow: hidden;
+  padding-left:10%;
+}
+
+
+.section.active{
+  border:5px solid #0b5351;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  pointer-events: none; /* Disable pointer events when hidden */
+}
+
+
+
+
+
+
+.section {
+  height: auto;
+  width: 60%;
+  background: #00a6a6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space between elements */
+  flex-shrink: 0;
+  box-sizing: border-box;
+  border: 5px solid #00a6a6;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  transition: border 0.3s ease;
+}
+
+
+
+.controls{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:100px;
+}
+.progressBar {
+  width: 80vw;
+  height: 10px;
+  background-color: #ebf2fa;
+  position: relative;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 10000;
+}
+
+.progressHead {
+  height: 100%;
+  background-color: #00a6a6;
+  border-radius: 5px 0 0 5px;
+}
+
+.progressPoint {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ebf2fa;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.section h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.section p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.section img {
+  margin-bottom: 10px;
+}
+
+.section a {
+  display: inline-block;
+  text-align: center;
+  width: 10%;
+  background-color: #bbdef0;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  text-decoration: none;
+  font-size:15px;
+  color:#30343f;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.section a:hover {
+  background-color: #0b5351;
+  color: #fff;
+}
+
+.head-logo{
+  display: flex;
+  justify-content: space-between;
+}
+
+.head-logo h3{
+  font-size: 40px;
+}
+
+.head-logo img{
+  width: 80px;
+  height:80px;
+  margin-top:20px;
+}
+
+
+
+@media (max-width: 767px) {
+  .section {
+    width: 85% !important;
+    margin: 20px 5px !important;
+    height:auto !important;
+  }
+  .wrapper{
+    padding-left:0%;
+  
+  }
+
+  .controls {
+   height:50px;
+  }
+  
+  .head-logo h3{
+    font-size: 30px !important;
+  }
+  .scrollingDiv .innerHeading{
+    font-size: 30px !important;
+  }
+  .head-logo img{
+    width:60px !important;
+    height:60px !important;
+  }
+}

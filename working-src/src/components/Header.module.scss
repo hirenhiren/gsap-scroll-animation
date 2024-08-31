@@ -1,0 +1,12 @@
+$color_1: #fff;
+
+.extraContent {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	justify-content: center;
+	align-items: start;
+	background: var(--light);
+	color: $color_1;
+	font-size: 72px;
+}

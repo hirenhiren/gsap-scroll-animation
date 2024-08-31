@@ -1,0 +1,150 @@
+$color_1: #30343f;
+$color_2: #fff;
+$background-color_1: #ebf2fa;
+$background-color_2: #00a6a6;
+$background-color_3: #bbdef0;
+$background-color_4: #0b5351;
+
+.scrollingDiv {
+	background: var(--yellow);
+	height: 100vh;
+}
+.innerHeading {
+	font-size: 50px;
+	padding-top: 3%;
+	text-align: center;
+}
+.wrapper {
+	display: inline-flex;
+	width: 100%;
+	background: var(--yellow);
+	overflow: hidden;
+	padding-left: 10%;
+}
+.section.active {
+	border: 5px solid #0b5351;
+}
+.info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+	pointer-events: none;
+}
+.section {
+	height: auto;
+	width: 60%;
+	background: #00a6a6;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-shrink: 0;
+	box-sizing: border-box;
+	border: 5px solid #00a6a6;
+	margin: 20px;
+	padding: 20px;
+	border-radius: 20px;
+	transition: border 0.3s ease;
+	h1 {
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+	p {
+		font-size: 20px;
+		line-height: 1.6;
+		margin-bottom: 20px;
+	}
+	img {
+		margin-bottom: 10px;
+	}
+	a {
+		display: inline-block;
+		text-align: center;
+		width: 10%;
+		background-color: $background-color_3;
+		padding: 10px 20px;
+		border-radius: 10px;
+		margin: 20px 0;
+		text-decoration: none;
+		font-size: 15px;
+		color: $color_1;
+		transition: background-color 0.3s ease;
+		transition: color 0.3s ease;
+		&:hover {
+			background-color: $background-color_4;
+			color: $color_2;
+		}
+	}
+}
+.controls {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+}
+.progressBar {
+	width: 80vw;
+	height: 10px;
+	background-color: $background-color_1;
+	position: relative;
+	border-radius: 5px;
+	text-align: center;
+	z-index: 10000;
+}
+.progressHead {
+	height: 100%;
+	background-color: $background-color_2;
+	border-radius: 5px 0 0 5px;
+}
+.progressPoint {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: $background-color_1;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	transition: background-color 0.3s ease;
+}
+.headLogo {
+	display: flex;
+	justify-content: space-between;
+	h3 {
+		font-size: 40px;
+	}
+	img {
+		width: 80px;
+		height: 80px;
+		margin-top: 20px;
+	}
+}
+@media (max-width: 767px) {
+	.section {
+		width: 85% !important;
+		margin: 20px 5px !important;
+		height: auto !important;
+	}
+	.wrapper {
+		padding-left: 0%;
+	}
+	.controls {
+		height: 50px;
+	}
+	.headLogo {
+		h3 {
+			font-size: 30px !important;
+		}
+		img {
+			width: 60px !important;
+			height: 60px !important;
+		}
+	}
+	.scrollingDiv {
+		.innerHeading {
+			font-size: 30px !important;
+		}
+	}
+}

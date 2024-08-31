@@ -1,0 +1,32 @@
+[
+    {
+      "title":"Step 1: Planning",
+      "description":"During the planning phase, we gather requirements from stakeholders, define the project scope, and create a detailed project plan. This involves conducting meetings with clients to understand their needs, drafting project timelines, and identifying potential risks. By the end of this phase, we aim to have a clear roadmap that aligns with our client's vision and expectations.",
+      "smallImage":"assets/planning.png",
+      "knowMore": "#"
+    },
+    {
+      "title":"Step 2: Design",
+      "description":"In the design phase, our team focuses on creating wireframes, designing mockups, and establishing the visual style and user interface (UI). We pay attention to usability, accessibility, and aesthetic appeal, ensuring that our designs meet both functional requirements and user expectations. Iterative feedback loops with clients and stakeholders help refine our designs before moving to the next phase.",
+      "smallImage":"assets/graphic-designer.png",
+      "knowMore":"#"
+    },
+    {
+      "title": "Step 3: Development",
+      "description":"Development involves translating design concepts into functional software. Our developers write code, implement features, and integrate the application with databases and third-party services. We follow best practices in coding standards and conduct rigorous testing to ensure the reliability and scalability of our solutions. Collaboration between design and development teams ensures that the final product aligns with initial design specifications.",
+      "smallImage":"assets/app-development.png",
+      "knowMore":"#"
+    },
+    {
+      "title": "Step 4: Launch",
+      "description":"The final step in our project lifecycle is the launch phase, where we prepare for deployment and ensure a smooth transition to production. This involves comprehensive testing, including functional, performance, and user acceptance testing (UAT). We create deployment plans, configure servers, and monitor system performance during the launch period. Post-launch, we provide ongoing support and maintenance to address any issues and optimize system performance.",
+      "smallImage":"assets/shuttle.png",
+      "knowMore":"#"
+    },
+    {
+      "title": "Step 5: Maintenance",
+      "description":"After the launch, our service provider will continuously monitor, update, and optimize the website to ensure top performance, security, and user satisfaction. Regular backups and support will also be provided to address any issues promptly.",
+      "smallImage":"assets/optimizing.png",
+      "knowMore":"#"
+    }
+  ]
